@@ -2,6 +2,39 @@
 
 A Python snippet utilizing the LEGO Spike motors, [MicroPython](https://lego.github.io/MINDSTORMS-Robot-Inventor-hub-API/), and a variety of commands: `start()`, `stop()`, `run_for_seconds()`, and `run_for_rotations()`.
 
+## Sample Code
+
+```py
+from mindstorms import MSHub, Motor, MotorPair
+from mindstorms.control import wait_for_seconds
+import math
+
+hub = MSHub()
+
+motor_a = Motor('A')
+motor_b = Motor('B')
+
+motor_a.run_for_rotations(1, 100)
+
+motor_b.run_for_rotations(1, 10)
+
+motor_a.run_for_seconds(2, 100)
+
+motor_b.run_for_seconds(2, -10)
+
+motor_a.start(100)
+motor_b.start(100)
+
+wait_for_seconds(2)
+
+hub.light_matrix.write(motor_a.get_speed())
+
+motor_a.stop()
+motor_b.stop()
+
+hub.speaker.beep()
+```
+
 ***
 
 ## Repo Resources
