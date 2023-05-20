@@ -1,8 +1,10 @@
-# LEGO Mindstorms Spike Hub and the Motors
+# LEGO Spike Hub and the Motors
 
-A Python snippet utilizing the LEGO Spike motors, [MicroPython](https://lego.github.io/MINDSTORMS-Robot-Inventor-hub-API/), and a variety of commands: ```start()```, ```stop()```, ```run_for_seconds()```, and ```run_for_rotations()```.
+A Python snippet utilizing the LEGO Spike motors, [MicroPython](https://lego.github.io/MINDSTORMS-Robot-Inventor-hub-API/), and a variety of commands: `start()`, `stop()`, `run_for_seconds()`, and `run_for_rotations()`.
 
-## Tutorial Requirements:
+***
+
+## Repo Resources
 
 * [Visual Studio Code](https://code.visualstudio.com/)
 * [MicroPython for LEGO Robot Inventor](https://www.lego.com/en-ca/themes/mindstorms/downloads)
